@@ -1,4 +1,4 @@
-package com.bmicalculator;
+package com.aftabali.bmicalculator;
 
 import com.facebook.react.ReactActivity;
 
