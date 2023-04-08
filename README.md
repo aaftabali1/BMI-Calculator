@@ -24,5 +24,8 @@ The BMI Calculator app features a user-friendly interface where users can input 
 ##### Technologies used: React Native, JavaScript
 #
 #
+![Home](https://github.com/aaftabali1/BMI-Calculator/blob/main/first.webp "Home")
+![Home](https://github.com/aaftabali1/BMI-Calculator/blob/main/second.webp "Home")
+![Home](https://github.com/aaftabali1/BMI-Calculator/blob/main/third.webp "Home")
 #
 ###### Note: This project is for educational purposes and should not be used as a substitute for professional medical advice. Always consult with a qualified healthcare professional for accurate assessment and interpretation of BMI results.
