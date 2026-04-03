@@ -1,18 +1,42 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import Home from './screens/Home';
+import About from './screens/About';
+import Colors from './constants/Colors';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Home" component={Home} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{
+            headerStyle: {backgroundColor: Colors.white},
+            headerTintColor: Colors.themeBlue,
+            headerTitleStyle: {
+              color: Colors.black,
+              fontWeight: '600',
+            },
+            headerShadowVisible: false,
+            contentStyle: {backgroundColor: Colors.white},
+          }}>
+          <Stack.Screen
+            name="Home"
+            component={Home}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="About"
+            component={About}
+            options={{title: 'About us'}}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 };
 

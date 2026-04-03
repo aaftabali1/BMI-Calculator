@@ -2,9 +2,13 @@
 #
 .DS_Store
 
-# Xcode
+# Build outputs
 #
 build/
+
+# Xcode
+#
+ios/.xcode.env.local
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -20,20 +24,34 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+*.xcscmblueprint
 
-# Android/IntelliJ
+# Android / IntelliJ
 #
-build/
 .idea
 .gradle
 local.properties
 *.iml
+captures/
+.externalNativeBuild
+
+# Android NDK / CMake (New Architecture)
+.cxx/
 
 # node.js
 #
 node_modules/
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Environment & secrets (keep .env.example committed if you use one)
+.env
+.env.local
+.env.*.local
+*.pem
 
 # BUCK
 buck-out/
@@ -57,3 +75,24 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# Ruby Bundler (local gem path from `bundle install --path vendor/bundle`)
+/vendor/bundle/
+
+# Metro / tooling caches
+.metro-health-check*
+.eslintcache
+
+# Testing
+coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.log
+*.hprof
+*.orig
+*.tmp
+*.temp
+*~

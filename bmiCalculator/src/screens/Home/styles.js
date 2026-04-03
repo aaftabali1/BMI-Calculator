@@ -29,12 +29,6 @@ export default StyleSheet.create({
     width: wp('30%'),
     height: wp('30%'),
   },
-  genderText: {
-    fontFamily: Fonts.medium,
-    textAlign: 'center',
-    fontSize: wp('4.5%'),
-    marginTop: 5,
-  },
   genderItemView: {flex: 1, alignItems: 'center'},
   genderText: {
     fontSize: wp('4.2%'),
@@ -65,6 +59,10 @@ export default StyleSheet.create({
     fontFamily: Fonts.medium,
     fontSize: wp('4.6'),
   },
+  modalSafeArea: {
+    flex: 1,
+    backgroundColor: Colors.white,
+  },
   modalMainView: {
     flex: 1,
     paddingVertical: 10,
@@ -88,5 +86,20 @@ export default StyleSheet.create({
   },
   categoryView: {
     marginTop: 30,
+  },
+  footerRow: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 28,
+    marginBottom: 12,
+    flexWrap: 'wrap',
+  },
+  footerLink: {
+    color: Colors.themeBlue,
+    fontFamily: Fonts.medium,
+    fontSize: wp('4%'),
+    paddingVertical: 8,
+    paddingHorizontal: 6,
   },
 });
